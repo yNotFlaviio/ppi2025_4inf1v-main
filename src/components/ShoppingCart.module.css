@@ -1,0 +1,283 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  color: #ccc;
+  font-size: 1.6rem;
+}
+
+.progressStep {
+  position: relative;
+  padding: 0 1rem;
+}
+
+.progressStep:first-child {
+  color: #dd5303; /* Cor do passo ativo */
+  font-weight: bold;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.mainContent {
+  flex: 3;
+}
+
+.summaryContent {
+  flex: 1;
+}
+
+.productSection,
+.servicesSection {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #001111;
+}
+
+.removeAllButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #c0392b;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.productItem {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.productItem:last-child {
+  border-bottom: none;
+}
+
+.productImage {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+.productDetails {
+  flex: 1;
+}
+
+.productVendor {
+  font-size: 1.4rem;
+  color: #666;
+  margin: 0 0 0.5rem;
+}
+
+.vendorName {
+  font-weight: bold;
+}
+
+.productTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.productInfo {
+  font-size: 1.4rem;
+  color: #666;
+  margin: 0;
+}
+
+.pixPrice {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.removeItemButton {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.productActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.quantityControl button {
+  background: #f5f5f5;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.quantityControl span {
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.productPricePix {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.servicesSection {
+  margin-top: 2rem;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.serviceItem label {
+  flex-grow: 1;
+}
+
+.serviceInfo {
+  font-size: 1.2rem;
+  color: #999;
+  margin-top: 1.5rem;
+}
+
+.serviceInfo a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.subtotal {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+.summaryBox {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.summaryBox h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.pixSummary {
+  background-color: #e8f5e9; /* Cor de destaque para o PIX */
+  border: 1px solid #c8e6c9;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.pixSummary span:first-child {
+  font-weight: bold;
+  color: #00796b;
+  font-size: 1.6rem;
+}
+
+.pixSummary .pixPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.pixSummary .pixDiscount {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.continueButton {
+  width: 100%;
+  background-color: #ff6900; /* Laranja da Kabum */
+  color: #fff;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.backButton {
+  width: 100%;
+  background-color: #fff;
+  color: #ff6900;
+  border: 1px solid #ff6900;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.emptyCartMessage {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #999;
+  padding: 5rem 0;
+}

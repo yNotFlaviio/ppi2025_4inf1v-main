@@ -1,0 +1,85 @@
+.productCard {
+  border: 2px solid transparent; /* Borda transparente inicial */
+  background-color: rgb(10, 10, 10); /* Fundo um pouco mais claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+  padding: 2rem;
+  color: white; /* Cor do texto para contraste */
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 105, 0, 0.7); /* Efeito neon na sombra */
+  border: 2px solid #ff6900; /* Borda neon laranja */
+}
+
+.imageContainer {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  color: var(--primary);
+  height: 4rem;
+  overflow: hidden;
+}
+
+.productDescription {
+  font-size: 1.4rem;
+  color: var(--text-light);
+  margin: 0 0 1rem;
+  flex-grow: 1;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.productActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.productPrice {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--text-contrast);
+  margin: 0;
+}
+
+.productButton {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.productButton:hover {
+  background-color: var(--primary-dark);
+}
