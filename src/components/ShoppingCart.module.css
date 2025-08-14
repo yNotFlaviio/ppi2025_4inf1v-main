@@ -4,6 +4,9 @@
   padding: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
 }
 
 .progressBar {
@@ -22,7 +25,7 @@
 }
 
 .progressStep:first-child {
-  color: #dd5303; /* Cor do passo ativo */
+  color: #dd5303;
   font-weight: bold;
 }
 
@@ -40,8 +43,7 @@
   flex: 1;
 }
 
-.productSection,
-.servicesSection {
+.productSection {
   background-color: #fff;
   border-radius: 0.8rem;
   padding: 2rem;
@@ -168,41 +170,6 @@
   color: #007bff;
 }
 
-.servicesSection {
-  margin-top: 2rem;
-}
-
-.serviceItem {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
-  font-size: 1.4rem;
-  color: #333;
-}
-
-.serviceItem label {
-  flex-grow: 1;
-}
-
-.serviceInfo {
-  font-size: 1.2rem;
-  color: #999;
-  margin-top: 1.5rem;
-}
-
-.serviceInfo a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.subtotal {
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: right;
-  margin-top: 1.5rem;
-}
-
 .summaryBox {
   background-color: #fff;
   border-radius: 0.8rem;
@@ -225,7 +192,7 @@
 }
 
 .pixSummary {
-  background-color: #e8f5e9; /* Cor de destaque para o PIX */
+  background-color: #e8f5e9;
   border: 1px solid #c8e6c9;
   border-radius: 0.5rem;
   padding: 1.5rem;
@@ -252,7 +219,7 @@
 
 .continueButton {
   width: 100%;
-  background-color: #ff6900; /* Laranja da Kabum */
+  background-color: #ff6900;
   color: #fff;
   border: none;
   padding: 1.5rem;

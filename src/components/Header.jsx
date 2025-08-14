@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 import { ShoppingCart, Person, Search } from "@mui/icons-material";
-import flatechLogo from "../assets/imgs/Logo - FlaTech.png"; // Assumindo que o nome do arquivo é esse
+import flatechLogo from "../assets/imgs/LogoFlaTech.png"; // Assumindo que o nome do arquivo é esse
 
 export function Header({ cart, setCurrentPage }) { // Adicionei setCurrentPage aqui
   return (
@@ -8,7 +8,7 @@ export function Header({ cart, setCurrentPage }) { // Adicionei setCurrentPage a
       {/* Top Header - a barra laranja superior */}
       <div className={styles.topHeader}>
         <div className={styles.topHeaderContent}>
-          <p>Frete Grátis acima de R$200*</p>
+          <p>Frete Grátis acima de R$200</p>
           <p>8% de desconto à vista</p>
           <p>Parcele em até 12x sem juros</p>
         </div>
