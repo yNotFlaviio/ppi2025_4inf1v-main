@@ -1,19 +1,19 @@
 .productCard {
-  border: 2px solid transparent; /* Borda transparente inicial */
-  background-color: rgb(10, 10, 10); /* Fundo um pouco mais claro */
+  border: 2px solid transparent; 
+  background-color: rgb(10, 10, 10); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
   padding: 2rem;
-  color: white; /* Cor do texto para contraste */
+  color: white; 
 }
 
 .productCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(255, 105, 0, 0.7); /* Efeito neon na sombra */
-  border: 2px solid #ff6900; /* Borda neon laranja */
+  box-shadow: 0 0 15px rgba(255, 105, 0, 0.7);
+  border: 2px solid #ff6900; 
 }
 
 .imageContainer {

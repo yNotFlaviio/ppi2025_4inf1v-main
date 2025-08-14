@@ -2,6 +2,7 @@ import "./styles/theme.css";
 import "./styles/global.css";
 import { useState } from "react";
 import { ProductList } from "./components/ProductList";
+import { PainelADM } from "./components/PainelADM";
 import { Header } from "./components/Header";
 import { ShoppingCart } from "./components/ShoppingCart";
 import { Login } from "./components/Login";
@@ -9,6 +10,7 @@ import { Register } from "./components/Register";
 
 export default function App() {
   const [cart, setCart] = useState([]);
+  const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState("login");
 
   function addToCart(product) {
@@ -52,7 +54,7 @@ export default function App() {
       {currentPage === "productList" && (
         <>
           <Header cart={cart} setCurrentPage={setCurrentPage} />
-          <ProductList addToCart={addToCart} />
+          <ProductList products={products} addToCart={addToCart} />
         </>
       )}
 
@@ -65,6 +67,13 @@ export default function App() {
           handleRemoveItem={handleRemoveItem}
           handleQuantityChange={handleQuantityChange}
         />
+      )}
+
+      {currentPage === "manage" && (
+        <>
+          <Header cart={cart} setCurrentPage={setCurrentPage} />
+          <PainelADM products={products} setProducts={setProducts} />
+        </>
       )}
     </>
   );

@@ -4,7 +4,7 @@
 }
 
 .topHeader {
-  background-color: var(--primary); /* Laranja da Xiaomi */
+  background-color: var(--primary);
   color: #0f0f0f;
   font-size: 1.2rem;
   padding: 0.8rem 3rem;
@@ -37,14 +37,14 @@
 }
 
 .logo img {
-  height: 10rem; /* Ajuste o tamanho do logo conforme sua necessidade */
+  height: 10rem; 
 }
 
 .navMenu {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  flex-grow: 1; /* Permite que o menu ocupe o espaço restante */
+  flex-grow: 1; 
 }
 
 .navMenu a {
